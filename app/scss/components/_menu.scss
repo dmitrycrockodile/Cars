@@ -1,0 +1,50 @@
+.menu {
+   width: 4rem;
+   height: 4rem;
+   position: fixed;
+   top: 2rem;
+   left: 2rem;
+   z-index: 10;
+   flex-direction: column;
+   transition: left .5s;
+   background-color: transparent;
+   border: none;
+   cursor: pointer;
+
+   &.change {
+      left: 15vw;
+      transform: rotate(45deg);
+
+      @include respond(tab-land) {
+         left: 20vw;
+      }
+
+      @include respond(tab-mini-land) {
+         left: 25vw;
+      }
+
+      @include respond(tab-port) {
+         left: 30vw;
+      }
+
+      @include respond(phone) {
+         left: 40vw;
+      }
+   }
+
+   &__line {
+      width: 100%;
+      height: 0.2rem;
+      background-color: $color-white;
+      margin: 0.3rem 0;
+      box-shadow: .1rem .1rem .3rem $color-grey-dark-3;
+      transition: transform .5s;
+   }
+}
+
+.change .menu__line--1 {
+   transform: rotate(270deg) translateX(-.4rem);
+}
+.change .menu__line--2 {
+   transform: rotate(360deg) translateY(-.6rem);
+}

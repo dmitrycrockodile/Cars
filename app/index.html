@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- TOP BAR  -->
+    <title>Classic Cars</title>
+    <link rel="shortcut icon" type="image/png" href="https://graphicheck.com/image/cache/catalog/Logo/Model1/super%20cars%202-800x800.png">
+    <!-- MAIN CSS  -->
+    <link rel="stylesheet" href="css/style.min.css"/>
+    <!-- FONTS -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&family=Special+Elite&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <!-- menu  -->
+      <button class="menu target center" aria-label="menu button">
+        <div class="menu__line menu__line--1"></div>
+        <div class="menu__line menu__line--2"></div>
+      </button>
+      <!-- end of menu  -->
+
+      <!-- navbar  -->
+      <nav class="navbar target">
+        <ul class="navbar__list">
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#home">Home</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#popular-cars">Popular Cars</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#video-gallery">Video Gallery</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#image-gallery">Image Gallery</a>
+          </li>
+          <li class="navbar__list-item">
+            <a class="navbar__list-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
+      <!-- end of navbar  -->
+
+      <!-- section 1  -->
+      <div class="wrapper">
+        <section class="section-1 target" id="home">
+          <div class="section-1__inner center">
+            <h1 class="section-heading section-1__heading">Classic Cars</h1>
+            <img class="section-1__img" src="images/car-section1.png" alt="Orange Car">
+          </div>
+        </section>
+      </div>
+      <!-- end of section 1  -->
+
+        <!-- section 2  -->
+        <div class="wrapper">
+        <section class="section-2 target" id="popular-cars">
+          <div class="section-2__inner">
+            <h1 class="section-heading">Popular Cars</h1>
+            <div class="cards-wrapper center">
+              <div class="card">
+                <h2 class="card__name">Car Name</h2>
+                <img class="card__img" src="images/car-1.jpg" alt="Car Name">
+                <h3 class="card__price">$ 200,000</h3>
+                <button class="card__btn" type="button">See more</button>
+              </div>
+
+              <div class="card">
+                <h2 class="card__name">Car Name</h2>
+                <img class="card__img" src="images/car-2.jpg" alt="Car Name">
+                <h3 class="card__price">$ 100,000</h3>
+                <button class="card__btn" type="button">See more</button>
+              </div>
+
+              <div class="card">
+                <h2 class="card__name">Car Name</h2>
+                <img class="card__img" src="images/car-3.jpg" alt="Car Name">
+                <h3 class="card__price">$ 150,000</h3>
+                <button class="card__btn" type="button">See more</button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end of section 2  -->
+
+        <!-- section 3  -->
+        <div class="wrapper">
+        <section class="section-3 target" id="video-gallery">
+          <div class="section-3__inner">
+            <h1 class="section-heading">Video Gallery</h1>
+            <div class="videos-wrapper center">
+              <video class="video" muted loop src="images/car-video-1.mp4"></video>
+              <video class="video" muted loop src="images/car-video-2.mp4"></video>
+              <video class="video" muted loop src="images/car-video-3.mp4"></video>
+            </div>
+            <div class="videos-wrapper center">
+              <video class="video" muted loop src="images/car-video-3.mp4"></video>
+              <video class="video" muted loop src="images/car-video-4.mp4"></video>
+              <video class="video" muted loop src="images/car-video-5.mp4"></video>
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end of section 3  -->
+
+        <!-- section 4  -->
+        <div class="wrapper">
+        <section class="section-4 target" id="image-gallery">
+          <div class="section-4__inner">
+            <h1 class="section-heading">Image Gallery</h1>
+            <div class="gallery center">
+              <div class="gallery__shelf"></div>
+              <img class="gallery__img--1" src="images/gallery-car-1.jpg" alt="Car Image">
+              <img class="gallery__img--2" src="images/gallery-car-2.jpg" alt="Car Image">
+              <img class="gallery__img--3" src="images/gallery-car-3.jpg" alt="Car Image">
+            </div>
+            <div class="gallery center">
+              <div class="gallery__shelf"></div>
+              <img class="gallery__img--1" src="images/gallery-car-4.jpg" alt="Car Image">
+              <img class="gallery__img--2" src="images/gallery-car-5.jpg" alt="Car Image">
+              <img class="gallery__img--3" src="images/gallery-car-6.jpg" alt="Car Image">
+            </div>
+          </div>
+        </section>
+      </div>
+      <!-- end of section 4  -->
+
+        <!-- section 5  -->
+        <div class="wrapper">
+        <section class="section-5 target" id="contact">
+          <div class="section-5__inner">
+            <h1 class="section-heading">Contact Us</h1>
+            <form class="contact-form">
+              <input class="contact-form__input" type="text" placeholder="Your Full Name">
+              <input class="contact-form__input" type="email" placeholder="Your Email">
+              <textarea class="contact-form__input" placeholder="Enter Message"></textarea>
+              <input class="contact-form__btn" type="submit" value="Submit">
+            </form>
+            <p class="section-5__copyright">
+              Copyright &copy; CodeAndCreate All Rights Reserved
+            </p>
+          </div>
+        </section>
+      </div>
+      <!-- end of section 5  -->
+
+    </div>  
+    <!-- script  -->
+    <script src="js/inert.js"></script>
+    <script src="js/main.min.js"></script>
+    <!-- end of script  -->
+  </body>
+</html>

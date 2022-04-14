@@ -1,0 +1,34 @@
+.video {
+   width: 25%;
+   margin: 0 2rem;
+   border-radius: .5rem;
+   opacity: .8;
+   box-shadow: .3rem .3rem .5r$color-grey-dark-2;
+   transition: all .5s;
+
+   @include respond(tab-land) {
+		width: 30%;
+      margin: 2rem;
+	}
+
+   @include respond(tab-mini-land) {
+      width: 70%;
+      margin: 3rem 0;
+   }
+
+   @include respond(phone) {
+		width: 100%;
+      margin: 2rem 0;
+	}
+
+   &:hover {
+      opacity: 1;
+      box-shadow: .5rem .5rem 1rem $color-grey-dark-2;
+   }
+}
+
+.videos-wrapper {
+   @include respond(tab-mini-land) {
+      flex-direction: column;
+   }
+}

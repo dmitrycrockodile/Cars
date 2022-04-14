@@ -1,0 +1,66 @@
+.card {
+   width: 50rem;
+   margin: 0 3rem;
+   background-color: $color-white;
+   padding: 1rem;
+   box-shadow: .6rem .6rem .6rem $color-grey-light-4;
+   transition: box-shadow .5s;
+   position: relative;
+
+   @include respond(tab-land) {
+		width: 40rem;
+      margin: 3rem;
+	}
+
+   &:hover {
+      box-shadow: .8rem .8rem .8rem $color-grey-light-4;
+   }
+
+   &__name {
+      font-size: 2rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: $color-white;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      z-index: 10;
+   }
+
+   &__img {
+      width: 100%;
+      opacity: .8;
+      transition: opacity .5s;
+
+      &:hover {
+         opacity: 1;
+      }
+   }
+
+   &__price {
+      font-size: 1.8rem;
+      color: $color-grey;
+      margin: .5rem 0;
+   }
+
+   &__btn {
+      width: 100%;
+      background-color: $color-white;
+      font-size: 1.7rem;
+      letter-spacing: .3rem;
+      text-transform: uppercase;
+      border: none;
+      margin-top: 1rem;
+      padding: .5rem;
+      color: $color-white;
+      text-shadow: .1rem .1rem .3rem $color-black;
+      box-shadow: .1rem .1rem .5rem $color-grey-light-4;
+      cursor: pointer;
+   }
+}
+
+.cards-wrapper {
+   @include respond(tab-land) {
+      flex-wrap: wrap;
+   }
+}
